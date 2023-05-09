@@ -38,14 +38,9 @@ export class HeaderComponent implements OnInit {
     let m:Menu[]=[];
     
     if(this.user == undefined){
-      m.push({name:'Register',link:'/register/consultant',class:'active-link',align:"top"});
-      m.push({name:'Login',link:'/login',class:'active-link',align:"top"});
       m.push({name:'Home',link:'/home',class:'active-link',align:"bottom"});
       m.push({name:'About Us',link:'/about-us',class:'active-link',align:"bottom"});
-      m.push({name:'Services',link:'/our-services',class:'active-link',align:"bottom"});
-      m.push({name:'Workflow',link:'/workflow',class:'active-link',align:"bottom"});
-      m.push({name:'Contact',link:'/contact-us',class:'active-link',align:"bottom"});
-      m.push({name:'FAQ',link:'/faq',class:'active-link',align:"bottom"});
+      m.push({name:'Products',link:'/products',class:'active-link',align:"bottom"});
     }else{
       m.push({name:this.user.email,link:'/dashboard',class:'active',align:"top"});
       m.push({name:'Dashboard',link:'/dashboard',class:'active-link',align:"bottom"});
