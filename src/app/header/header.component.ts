@@ -39,8 +39,8 @@ export class HeaderComponent implements OnInit {
     
     if(this.user == undefined){
       m.push({name:'Home',link:'/home',class:'active-link',align:"bottom"});
+      m.push({name:'Benefits',link:'/benefits',class:'active-link',align:"bottom"});
       m.push({name:'About Us',link:'/about-us',class:'active-link',align:"bottom"});
-      m.push({name:'Products',link:'/products',class:'active-link',align:"bottom"});
     }else{
       m.push({name:this.user.email,link:'/dashboard',class:'active',align:"top"});
       m.push({name:'Dashboard',link:'/dashboard',class:'active-link',align:"bottom"});
